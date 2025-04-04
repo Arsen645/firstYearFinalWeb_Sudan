@@ -3,20 +3,84 @@
   <head>
     <title>jh</title>
     <meta charset='utf-8'>
-    <sryle>
-      .red {
-        background-color: red;
-        height: 200vh;
+    <style>
+      body, html, ul {
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 16px;
       }
-    </sryle>
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      nav {
+        width: 100%;
+        height: 6em;
+        background-color:rgb(115, 145, 172);
+      }
+      footer {
+        width: 100%;
+        height: 40em;
+        background-color:rgb(80, 97, 112);
+        color: white;
+        
+      }
+      footer .footerMain {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;   
+      }    
+      footer .footerMain ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5em;
+        padding-bottom: 2em;
+      }
+      footer .footerMain .contact a {
+        padding: 0.6em;
+        padding-left: 10em;
+        padding-right: 10em;
+
+        border: 1px solid white;
+      }
+      footer .footerMain ul.contact {
+        padding-top: 3em;
+      }
+      footer .footerMain ul.contact a:hover {
+        color: #000000;
+        background-color: white;
+      }
+
+      footer .footerMain ul:first-of-type a:hover {
+        color: #926c02;
+      }
+
+      
+    </style>
   </head>
   <body>
-    <div class = "green">
+    <nav>gergrg</nav>
 
-    </div>
-    <div class = "red">
 
+
+    <aside></aside>
+    <footer>
+      <div class = "footerMain">
+        <ul>
+          <li><a href = "">Search</a></li>
+          <li><a href = "">Donate</a></li>
+          <li><a href = "">Career</a></li>
+          <li><a href = "">For Journalists</a></li>
+        </ul>
+        <ul class = "contact">
+          <li><a href = "">Contact Us</a></li>
+          <li><a href = "">Subscribe</a></li>
+          
+        </ul>
     </div>
+    </footer>
 
   </body>
 </html>
