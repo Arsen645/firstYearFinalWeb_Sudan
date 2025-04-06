@@ -1,0 +1,227 @@
+body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 16px;
+        background-color: #f0f0f0;
+
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      nav {
+        width: 100%;
+        height: 6em;
+        /* background-color:rgb(115, 145, 172); */
+        border-color: transparent;
+        float: left;
+        z-index: 1000;
+        position: fixed;
+      }
+      nav ul{
+        text-decoration: none;
+        list-style: none;
+        background-color: transparent;
+        width: 55%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        margin-left: auto;
+        
+      }
+      nav li {
+        display: inline;
+        background-color: transparent;
+        margin: 1.3em;
+        padding-top: 5px;
+      }
+      nav ul li:last-child {
+        background-color: #e4572e;
+        border-radius: 25px;
+        padding: 5px 15px 5px 15px;
+      }
+      nav ul li:last-child:hover {
+        background-color: #ea6036;
+      }
+      footer {
+        width: 100%;
+        height: 40em;
+        background-color:rgb(80, 97, 112);
+        color: white;
+        margin-top: 100vh;
+        
+      }
+      footer .footerMain {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;   
+        background-color: rgb(80, 97, 112);
+      }    
+      footer .footerMain ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5em;
+        padding-bottom: 2em;
+      }
+      footer .footerMain ul:first-child li {
+        padding: 0 1em 0 1em;
+      }
+      footer .footerMain .contact a {
+        padding: 0.6em;
+        padding-left: 10em;
+        padding-right: 10em;
+
+        border: 1px solid white;
+      }
+      footer .footerMain ul.contact {
+        padding-top: 3em;
+      }
+      footer .footerMain ul.contact a:hover {
+        color: #000000;
+      }
+      footer .footerMain ul.contact li:hover {
+        color: #ffffff;
+      }
+
+      footer .footerMain ul:first-of-type a:hover {
+        color: #926c02;
+      }
+
+/**8888*/
+
+      .hero {
+      position: relative;
+      background-image: url('images/spot.jpg'); 
+      background-size: cover;
+      color: white;
+      height: 500px;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center; */
+      padding: 4%;
+    }
+    .hero .text {
+      margin: 7% 15% 0;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 20px 0;
+    }
+
+    .hero .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+
+    .hero .buttons div {
+      background-color: #e4572e;
+      color: white;
+      
+      padding: 10px 30px 10px 30px;
+      
+    }
+    .hero .buttons a:hover{
+    background-color: #302825;   /* does not work */
+    }
+
+
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+      flex-wrap: wrap;
+
+    }
+
+    .gallery .galleryUnit {
+      flex: 1; 
+      max-width: 30%;
+      min-width: 30%;
+      margin-bottom: 1.5em;
+    }
+
+    
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .caption {
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .caption h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .caption p {
+      font-size: 14px;
+    }
+    main {
+      width: 80%;
+      margin: 0px auto;/* I did it myself. 0px - top margin, auto - left and right, no bottom margin*/
+    }
+      @media screen and (max-width: 540px){
+        .gallery {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    .gallery > div {
+      flex: 1; 
+      min-width: 90%;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      }
+
+
+
+
+
+
+    article .articleContainer {
+     padding: 10px 20px;
+     border-bottom: 2px solid #d3d3d3; 
+      padding-bottom: 3px; 
+    }
+
+    article .title {
+      color: #0f262d;
+      font-size: 1.5em; 
+      font-weight: bold;
+      margin-bottom: 5px;
+      
+    }
+    article .artText p {
+      font-size: 20px;
+    }
+    article .artText h3 {
+      font-size: 1.2em;
+     margin-bottom: 8px;
+    }
+    article ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+    article ul li {
+      margin: 0.5em;
+    }

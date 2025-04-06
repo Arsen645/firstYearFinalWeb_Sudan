@@ -4,201 +4,242 @@
     <title>jh</title>
     <meta charset='utf-8'>
     <style>
-      body, html, ul {
-        margin: 0;
-        padding: 0;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 16px;
-        background-color: #f2f2f2;
-
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-      nav {
-        width: 100%;
-        height: 6em;
-        background-color:rgb(115, 145, 172);
-      }
-      footer {
-        width: 100%;
-        height: 40em;
-        background-color:rgb(80, 97, 112);
-        color: white;
-        margin-top: 100vh;
-        
-      }
-      footer .footerMain {
-        width: 60%;
-        margin-right: auto;
-        margin-left: auto;   
-      }    
-      footer .footerMain ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 5em;
-        padding-bottom: 2em;
-      }
-      footer .footerMain .contact a {
-        padding: 0.6em;
-        padding-left: 10em;
-        padding-right: 10em;
-
-        border: 1px solid white;
-      }
-      footer .footerMain ul.contact {
-        padding-top: 3em;
-      }
-      footer .footerMain ul.contact a:hover {
-        color: #000000;
-        background-color: white;
-      }
-
-      footer .footerMain ul:first-of-type a:hover {
-        color: #926c02;
-      }
-
-/**8888*/
-
-      .hero {
-      position: relative;
-      background-image: url('images/spot.jpg'); 
-      background-size: cover;
-      background-position:center;
-      color: white;
-      height: 500px;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center; */
-      padding: 4%;
-    }
-    .hero .text {
-      margin: 7% 15% 0;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px 0;
-    }
-
-    .hero .buttons {
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      width: 300px;
-    }
-
-    .hero .buttons div {
-      background-color: #e4572e;
-      color: white;
       
-      padding: 10px 30px 10px 30px;
-      
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 50px;
-    }
-
-    .gallery > div {
-      flex: 1; 
-      max-width: 30%;
-      min-width: 20%;
-    }
-
     
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
 
-    .caption {
-      padding: 10px;
-      background-color: white;
-      border-radius: 5px;
-      text-align: center;
-    }
 
-    .caption h3 {
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
 
-    .caption p {
-      font-size: 14px;
-    }
-    main {
-      width: 90%;
-      margin: 0px auto;/* I did it myself. 0px - top margin, auto - left and right, no bottom margin*/
-    }
-      @media screen and (max-width: 540px){
-        .gallery {
-      display: flex;
-      flex-direction: column;
-      margin-top: 50px;
-    }
-
-    .gallery > div {
-      flex: 1; 
-      min-width: 90%;
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-      }
     </style>
+    <link rel="stylesheet" href="projectcss.css" type = "text/css">
   </head>
+
+
+
+
+
+
   <body>
-    <nav>gergrg</nav>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Volunteer</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Donate</a></li>
+      </ul>
+    </nav>
     <div class="hero">
+
       <div class = "text">
       <h1>SUDAN</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec velit quis nisi interdum iaculis.</p>
+      <p>Lorem ipsum </p>
       <div class="buttons">
-        <div>Contribute</div>
-        <div>Read More</div>
+        <a href=""><div>Donate</div></a>
+        <a href = ""><div>Subscribe</div></a>
       </div>
     </div>
     </div>
   <main>
+    
+    
     <div class="gallery">
       <div>
         <img src="images/spot.jpg" alt="Photo 1">
         <div class="caption">
-          <h3>IMAN ALOCH</h3>
-          <p>Description or story of this person or moment.</p>
+          <h3>VICTIMS</h3>
+          <p>Description </p>
         </div>
       </div>
       <div>
         <img src="images/spot.jpg" alt="Photo 2">
         <div class="caption">
-          <h3>DONEL BAKKATURE</h3>
-          <p>Another caption with a different background story.</p>
+          <h3>Description</h3>
+          <p>Description</p>
         </div>
       </div>
       <div>
         <img src="images/spot.jpg" alt="Photo 3">
         <div class="caption">
-          <h3>DYN BRIT GODES</h3>
-          <p>Photo caption text for context and emotion.</p>
+          <h3>Description</h3>
+          <p>Description</p>
         </div>
       </div>
     </div>
+  
+  
+
+    <article>
+      <div class = "articleContainer">
+        <h2 class = "title">Introduction</h2>
+      </div>
+      <div class = "artText">
+        <p>
+        The Darfur Crisis and the latest Sudanese conflict (2023) represent some of the most tragic and pro
+        longed episodes of violence in Sudan’s modern history. These conflicts have been marked by ethnic tensions
+        , political instability, and humanitarian disasters. While the Darfur crisis began in the early 2000s, the
+         roots of Sudan's ongoing conflict can be traced back even earlier, 
+        to the country's history of ethnic and regional divisions, military rule, and marginalization.</p>
+      </div>
+    </article>
+    <article>
+      <div class = "articleContainer">
+        <h2 class = "title">The Last Sudanese Conflict (2023–present)</h2>
+      </div>
+      <div class = "artText">
+        <h3>Background: Power Struggle and Political Transition</h3>
+        <p>
+          The Darfur crisis is just one chapter in Sudan’s complex history of internal conflict. Sudan’s long history 
+          of civil wars and military regimes culminated in the ousting of President Omar al-Bashir in April 2019 after 
+          months of protests against his rule. The Sudanese Revolution succeeded in removing Bashir, and a 
+          transitional government was established with civilian and military leadership. However, tensions 
+          between the military and civilian factions, along with economic struggles, continued to undermine 
+          the transitional government.
+
+          By 2021, General Abdel Fattah al-Burhan, head of the Sudanese military, and General Mohamed Hamdan Dagalo, 
+          head of the Rapid Support Forces (RSF), a powerful paramilitary group, staged a coup against the civilian-l
+          ed government. This sparked a political crisis and led to renewed instability.</p>        
+
+
+
+
+
+
+            <h3>Background: Power Struggle and Political Transition</h3>
+        <p>
+          The Darfur crisis is just one chapter in Sudan’s complex history of internal conflict. Sudan’s long history 
+          of civil wars and military regimes culminated in the ousting of President Omar al-Bashir in April 2019 after 
+          months of protests against his rule. The Sudanese Revolution succeeded in removing Bashir, and a 
+          transitional government was established with civilian and military leadership. However, tensions 
+          between the military and civilian factions, along with economic struggles, continued to undermine 
+          the transitional government.
+
+          By 2021, General Abdel Fattah al-Burhan, head of the Sudanese military, and General Mohamed Hamdan Dagalo, 
+          head of the Rapid Support Forces (RSF), a powerful paramilitary group, staged a coup against the civilian-l
+          ed government. This sparked a political crisis and led to renewed instability.</p>        
+          <h3>Outbreak of Conflict (2023)</h3>
+          <p>In April 2023, tensions between al-Burhan’s Sudanese Armed Forces (SAF) and Dagalo’s RSF reached a 
+            boiling point. The dispute arose from disagreements over the integration of the RSF into the regular
+             army, as mandated by a peace agreement intended to establish a unified military structure.
+            The conflict quickly escalated into full-scale fighting between the two factions. Khartoum, the capi
+            tal of Sudan, became the battleground. There were reports of airstrikes, artillery bombardments, 
+            and intense street battles, causing widespread destruction. The fighting left hundreds dead and d
+            isplaced thousands of civilians. 
+            Hospitals and residential areas were caught in the crossfire, worsening the humanitarian crisis.</p>
+
+
+
+
+
+
+
+            <h3>Humanitarian Impact</h3>
+        <p>
+          TAs of mid-2023, Khartoum has been devastated by the violence, with many of the city's infra
+          structure, including schools and hospitals, destroyed. More than 1 million people have been 
+          isplaced, and tens of thousands have fled to neighboring countries such as Chad. The humanita
+          rian situation is d
+          ire, with food shortages, lack of medical care, and basic services.</p>     
+          
+          
+          
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class = "articleContainer">
+        <h2 class = "title">International Reaction</h2>
+      </div>
+      <div class = "artText">
+        <p>
+          The international community, including the United Nations and African Union, ha
+          s called for a ceasefire and dialogue between the warring parties. However, the 
+          violence continues with no clear resolution in sight. Many countries have impose
+          d sanctions on Sudan’s military leaders, but t
+          he conflict remains entrenched, and the path to peace appears uncertain.</p>
+      </div>
+    </article>
+    <article>
+      <div class = "articleContainer">
+        <h2 class = "title">Key Events in the Sudanese Conflicts</h2>
+      </div>
+      <div class = "artText">
+        <ul>
+          <li>2003 – Outbreak of the Darfur conflict as rebel groups begin fighting the Sudanese government.</li>
+          <li>2009 – ICC issues arrest warrant for President Bashir for war crimes in Darfur.</li>
+          <li>2011 – South Sudan gains independence, but tensions remain between North and South.</li>
+          <li>2019 – Omar al-Bashir ousted after months of pop
+            ular protests, marking the beginning of a transition to civilian rule.</li>
+          <li>2021 – Military coup led by General al-Burhan and General Dagalo.</li>
+          <li>2023 – Conflict erupts between the Sudanese Armed Forces (SAF) and Rapid Support Forces (RSF), 
+            leading to widespread violence and displacement.</li>
+        </ul>
+      </div>
+
+
+
+
+
+    </article>
+
+    <article>
+      <div class = "articleContainer">
+        <h2 class = "title">Latest News</h2>
+      </div>
+    </article>
+
+
+
+    <div class="gallery">
+      <div class = "galleryUnit">
+        <img src="images/spot.jpg" alt="Photo 1">
+        <div class="caption">
+          <h3>VICTIMS</h3>
+          <p>Description </p>
+        </div>
+      </div>
+      <div class = "galleryUnit">
+        <img src="images/spot.jpg" alt="Photo 2">
+        <div class="caption">
+          <h3>Description</h3>
+          <p>Description</p>
+        </div>
+      </div>
+      <div class = "galleryUnit">
+        <img src="images/spot.jpg" alt="Photo 3">
+        <div class="caption">
+          <h3>Description</h3>
+          <p>Description</p>
+        </div>
+      </div>
+      <div class = "galleryUnit">
+        <img src="images/spot.jpg" alt="Photo 3">
+        <div class="caption">
+          <h3>Description</h3>
+          <p>Description</p>
+        </div>
+      </div>
+      <div class = "galleryUnit">
+        <img src="images/spot.jpg" alt="Photo 3">
+        <div class="caption">
+          <h3>Description</h3>
+          <p>Description</p>
+        </div>
+      </div>
+      <div class = "galleryUnit">
+        <img src="images/spot.jpg" alt="Photo 3">
+        <div class="caption">
+          <h3>Description</h3>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
   </main>
-
-
-
     <aside></aside>
     <footer>
       <div class = "footerMain">
