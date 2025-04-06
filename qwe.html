@@ -5,129 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SUDAN | Humanitarian Site</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
-
-    .hero {
-      position: relative;
-      background-image: url('https://via.placeholder.com/1200x500'); /* Replace with your image */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 60px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px 0;
-    }
-
-    .hero .buttons {
-      margin-top: 20px;
-      display: flex;
-      
-    }
-
-    .hero .buttons div {
-      background-color: #e4572e;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin-right: 10px;
-      cursor: pointer;
-      width: 100px;
-      height: 30px;
-      
-    }
-
-    .gallery {
+   .news-container {
   display: flex;
-  justify-content: space-around;
+  gap: 20px; /* Space between the articles */
+  padding: 20px; /* Optional padding around the container */
 }
 
-.gallery > div {
+.news-item {
   flex: 1; 
   max-width: 30%;
-
+  min-width: 30%;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
 }
 
-    /* .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      padding: 40px;
-    } */
+.news-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
+.news-image img {
+  display: block; /* Prevent extra space below image */
+  width: 100%;
+  height: auto;
+}
 
-    .caption {
-      padding: 10px;
-      background-color: white;
-      border-radius: 5px;
-      text-align: center;
-    }
+.news-details {
+  padding: 15px;
+}
 
-    .caption h3 {
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
+.news-meta {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
 
-    .caption p {
-      font-size: 14px;
-    }
+.news-type {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.news-date {
+  /* Add styling for the date if needed */
+}
+
+.news-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.news-summary {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.news-language {
+  color: #777;
+  font-size: 0.9em;
+}
   </style>
 </head>
 <body>
-
-  <div class="hero">
-    <h1>SUDAN</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec velit quis nisi interdum iaculis.</p>
-    <div class="buttons">
-      <div>Contribute</div>
-      <div>Read More</div>
-    </div>
-  </div>
-
-  <div class="gallery">
-    <div>
-      <img src="images/spot.jpg" alt="Photo 1">
-      <div class="caption">
-        <h3>IMAN ALOCH</h3>
-        <p>Description or story of this person or moment.</p>
+    <div class="news-container">
+        <article class="news-item">
+          <div class="news-image">
+            <img src="images/spot.jpg" alt="news 1 Image">
+          </div>
+          <div class="news-details">
+            <p class="news-meta">
+              <span class="news-type">EVENT RECORDING / AFRICA</span>
+              <span class="news-date">12 FEBRUARY 2025</span>
+            </p>
+            <h3 class="news-title">Big Priorities for the African Union in 2025: Zooming in on Sudan, DRC and Cameroon</h3>
+            <p class="news-summary">In this online event Crisis Group experts discuss the eight priorities that Crisis Group has identified for the African Union in the year ahead and specifically zoom in on what it...</p>
+          </div>
+        </article>
+      
+        <article class="news-item">
+          <div class="news-image">
+            <img src="images/spot.jpg" alt="news 2 Image">
+          </div>
+          <div class="news-details">
+            <p class="news-meta">
+              <span class="news-type">BRIEFING / AFRICA</span>
+              <span class="news-date">06 FEBRUARY 2025</span>
+            </p>
+            <h3 class="news-title">Eight Priorities for the African Union in 2025</h3>
+            <p class="news-summary">As the African Union prepares to choose new leadership, it faces several forbidding challenges in the peace and security domain. This briefing points to eight areas where the...</p>
+            <p class="news-language">Français</p>
+          </div>
+        </article>
+      
+        
       </div>
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/300x200" alt="Photo 2">
-      <div class="caption">
-        <h3>DONEL BAKKATURE</h3>
-        <p>Another caption with a different background story.</p>
-      </div>
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/300x200" alt="Photo 3">
-      <div class="caption">
-        <h3>DYN BRIT GODES</h3>
-        <p>Photo caption text for context and emotion.</p>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>
