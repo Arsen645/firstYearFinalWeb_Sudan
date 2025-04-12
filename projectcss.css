@@ -116,7 +116,26 @@ body, html {
       height: auto;
       border-radius: 8px;
     }
-    @media screen and (max-width: 540px){
+
+
+
+    .caption {
+      padding: 3px;
+      background-color: white;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    
+
+    .caption p {
+      font-size: 14px;
+    }
+    main {
+      width: 80%;
+      margin: 0px auto;/* I did it myself. 0px - top margin, auto - left and right, no bottom margin*/
+    }
+      @media screen and (max-width: 640px){
         .gallery {
       display: flex;
       flex-direction: column;
@@ -138,7 +157,7 @@ body, html {
     }
 
     .caption h3 {
-      margin-top: 1em;
+      margin-top: 0.3em;
       margin-bottom: 0.4em;
       font-size: 1.8em;
     }
@@ -203,11 +222,12 @@ body, html {
       padding: 0%;
       margin: 0%;
       text-align: left;
-      font-size: 1.5em;
+      font-size: 1.1em;
     }
     #news .galleryUnit .caption p {
       padding: 0%;
       margin: 0%;
+      margin-top: 5px;
       text-align: left;
       font-size: 1em;
     }

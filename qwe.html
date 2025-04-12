@@ -68,10 +68,152 @@
   color: #777;
   font-size: 0.9em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .footer {
+      padding: 40px;
+      border-top: 2px solid #e25e0e;
+      background-color: #0d0d0d;
+      position: relative;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .footer-section {
+      margin: 10px 20px;
+      text-align: center;
+    }
+
+    .footer-section h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      border: 1px solid white;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #333;
+    }
+
+    .social {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .social h3 {
+      color: #f26522;
+      margin-bottom: 15px;
+    }
+
+    .icons {
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .icons a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .badge {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .badge img {
+      width: 100px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+
+    .footer-bottom .left,
+    .footer-bottom .right {
+      color: white;
+    }
+
+    .anniversary {
+      font-size: 48px;
+      color: #f26522;
+      font-weight: bold;
+    }
+
+    .years {
+      color: #f26522;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .footer-top {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer .buttons {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer .footerButton {
+      padding: 1em;
+      border: 1px solid #fff;
+      width: 15em;
+      text-align: center;
+    }
+ 
   </style>
 </head>
 <body>
-    <div class="news-container">
+    <!-- <div class="news-container">
         <article class="news-item">
           <div class="news-image">
             <img src="images/spot.jpg" alt="news 1 Image">
@@ -102,6 +244,63 @@
         </article>
       
         
+      </div> -->
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-section">
+        <h3>SEARCH</h3>
+        <!-- <a href="#" class="button">CONTACT US</a> -->
       </div>
+      <div class="footer-section">
+        <h3>DONATE</h3>
+      </div>
+      <div class="footer-section">
+        <h3>CAREERS</h3>
+        <!-- <a href="#" class="button">SUBSCRIBE TO OUR NEWSLETTER</a> -->
+      </div>
+      <div class="footer-section">
+        <h3>FOR JOURNALISTS</h3>
+      </div>
+    </div>
+    <div class = "buttons">
+      <div class = "footerButton">CONTACT US</div>
+      <div class = "footerButton">SUBSCRIBE</div>
+
+    </div>
+
+    <div class="social">
+      <h3>CONNECT WITH US</h3>
+      <div class="icons">
+        <a href="#">📘</a>
+        <a href="#">𝕏</a>
+        <a href="#">▶️</a>
+        <a href="#">📸</a>
+        <a href="#">🔗</a>
+        <a href="#">📡</a>
+        <a href="#">📱</a>
+        <a href="#">🦋</a>
+      </div>
+    </div>
+
+    <div class="badge">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Candid_Seal_of_Transparency_Platinum_2024.png/240px-Candid_Seal_of_Transparency_Platinum_2024.png" alt="Platinum Transparency 2024">
+    </div>
+
+    <div class="footer-bottom">
+      <div class="left">
+        © 2025 Crisis Group | <a href="#" style="color: white;">Legal Notice</a>
+      </div>
+      <div class="right">
+        <span class="anniversary">30</span><br>
+        <span class="years">1995 • 2025</span><br>
+        PREVENTING WAR. SHAPING PEACE.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
 </body>
 </html>
