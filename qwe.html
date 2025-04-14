@@ -1,303 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SUDAN | Humanitarian Site</title>
+  <meta charset="UTF-8">
+  <title>The Impacts of Ocean Pollution</title>
   <style>
-   .news-container {
-  display: flex;
-  gap: 20px; /* Space between the articles */
-  padding: 20px; /* Optional padding around the container */
-}
-
-.news-item {
-  flex: 1; 
-  max-width: 30%;
-  min-width: 30%;
-  border: 1px solid #ddd; 
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
-}
-
-.news-image {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-}
-
-.news-image img {
-  display: block; /* Prevent extra space below image */
-  width: 100%;
-  height: auto;
-}
-
-.news-details {
-  padding: 15px;
-}
-
-.news-meta {
-  color: #777;
-  font-size: 0.9em;
-  margin-bottom: 8px;
-}
-
-.news-type {
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-
-
-.news-title {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #333;
-  line-height: 1.3;
-}
-
-.news-summary {
-  color: #555;
-  line-height: 1.5;
-  font-size: 0.95em;
-  margin-bottom: 10px;
-}
-
-.news-language {
-  color: #777;
-  font-size: 0.9em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d0d0d;
-      color: white;
+    .clear {
+      clear: both;
     }
-
-    .footer {
-      padding: 40px;
-      border-top: 2px solid #e25e0e;
-      background-color: #0d0d0d;
-      position: relative;
+    .articleUnit {
+      border: 1px solid black;
     }
-
-    .footer-top {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
+    img {
+      float: left;
+      max-width: 30em;
     }
-
-    .footer-section {
-      margin: 10px 20px;
-      text-align: center;
-    }
-
-    .footer-section h3 {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .button {
-      border: 1px solid white;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s;
-    }
-
-    .button:hover {
-      background: #333;
-    }
-
-    .social {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .social h3 {
-      color: #f26522;
-      margin-bottom: 15px;
-    }
-
-    .icons {
-      font-size: 24px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .icons a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .badge {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .badge img {
-      width: 100px;
-    }
-
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 14px;
-      padding: 10px 20px;
-    }
-
-    .footer-bottom .left,
-    .footer-bottom .right {
-      color: white;
-    }
-
-    .anniversary {
-      font-size: 48px;
-      color: #f26522;
-      font-weight: bold;
-    }
-
-    .years {
-      color: #f26522;
-      font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-      .footer-top {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-    .footer-top {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    footer .buttons {
-      display: flex;
-      justify-content: space-around;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    footer .footerButton {
-      padding: 1em;
-      border: 1px solid #fff;
-      width: 15em;
-      text-align: center;
-    }
- 
   </style>
 </head>
 <body>
-    <!-- <div class="news-container">
-        <article class="news-item">
-          <div class="news-image">
-            <img src="images/spot.jpg" alt="news 1 Image">
-          </div>
-          <div class="news-details">
-            <p class="news-meta">
-              <span class="news-type">EVENT RECORDING / AFRICA</span>
-              <span class="news-date">12 FEBRUARY 2025</span>
-            </p>
-            <h3 class="news-title">Big Priorities for the African Union in 2025: Zooming in on Sudan, DRC and Cameroon</h3>
-            <p class="news-summary">In this online event Crisis Group experts discuss the eight priorities that Crisis Group has identified for the African Union in the year ahead and specifically zoom in on what it...</p>
-          </div>
-        </article>
-      
-        <article class="news-item">
-          <div class="news-image">
-            <img src="images/spot.jpg" alt="news 2 Image">
-          </div>
-          <div class="news-details">
-            <p class="news-meta">
-              <span class="news-type">BRIEFING / AFRICA</span>
-              <span class="news-date">06 FEBRUARY 2025</span>
-            </p>
-            <h3 class="news-title">Eight Priorities for the African Union in 2025</h3>
-            <p class="news-summary">As the African Union prepares to choose new leadership, it faces several forbidding challenges in the peace and security domain. This briefing points to eight areas where the...</p>
-            <p class="news-language">Français</p>
-          </div>
-        </article>
-      
-        
+
+  <h1>THE IMPACTS OF OCEAN POLLUTION</h1>
+  <article>
+  <div class = "articleUnit">
+    <div class = "rightArticle">
+      <!-- <div class="rArticleImage">
+        start
+        <img src = "images/spot.jpg">end
       </div> -->
-
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-section">
-        <h3>SEARCH</h3>
-        <!-- <a href="#" class="button">CONTACT US</a> -->
-      </div>
-      <div class="footer-section">
-        <h3>DONATE</h3>
-      </div>
-      <div class="footer-section">
-        <h3>CAREERS</h3>
-        <!-- <a href="#" class="button">SUBSCRIBE TO OUR NEWSLETTER</a> -->
-      </div>
-      <div class="footer-section">
-        <h3>FOR JOURNALISTS</h3>
+      <div class = "rArticleText">
+        <img src = "images/spot.jpg">
+        he international community, including the United Nations and African Union, ha
+          s called for a ceasefire and dialogue between the warring parties. However, the 
+          violence continues with no clear resolution in sight. Many countries have impose
+          d sanctions on Sudan's military leaders, but t
+          he conflict remains entrenched, and the path to peace appea
       </div>
     </div>
-    <div class = "buttons">
-      <div class = "footerButton">CONTACT US</div>
-      <div class = "footerButton">SUBSCRIBE</div>
-
-    </div>
-
-    <div class="social">
-      <h3>CONNECT WITH US</h3>
-      <div class="icons">
-        <a href="#">📘</a>
-        <a href="#">𝕏</a>
-        <a href="#">▶️</a>
-        <a href="#">📸</a>
-        <a href="#">🔗</a>
-        <a href="#">📡</a>
-        <a href="#">📱</a>
-        <a href="#">🦋</a>
-      </div>
-    </div>
-
-    <div class="badge">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Candid_Seal_of_Transparency_Platinum_2024.png/240px-Candid_Seal_of_Transparency_Platinum_2024.png" alt="Platinum Transparency 2024">
-    </div>
-
-    <div class="footer-bottom">
-      <div class="left">
-        © 2025 Crisis Group | <a href="#" style="color: white;">Legal Notice</a>
-      </div>
-      <div class="right">
-        <span class="anniversary">30</span><br>
-        <span class="years">1995 • 2025</span><br>
-        PREVENTING WAR. SHAPING PEACE.
-      </div>
-    </div>
-  </footer>
+    <div class="clear"></div>
+  </div>
+  
+  kdnfak
+</article>
 
 </body>
 </html>
-
-
