@@ -3,15 +3,12 @@
   <head>
     <title>SUDAN | Humanitarian Site</title>
     <meta charset='utf-8'>
-    <style>
-      
-    
-
-
-
-
-    </style>
     <link rel="stylesheet" href="projectcss.css" type = "text/css">
+    <style>
+      nav {
+        background-color: transparent;
+      }
+    </style>
   </head>
 
 
@@ -20,7 +17,7 @@
 
 
   <body>
-    <nav>
+    <nav class = "nav">
       
       <ul>
         <li><a href="">Home</a></li>
@@ -30,6 +27,18 @@
         <li><a href="">Donate</a></li>
       </ul>
     </nav>
+     <script> <!-- https://youtube/axQ7eN2oPu0 -->
+      const navEl = document.querySelector('.nav');
+  
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navEl.classList.add('nav-scroll');
+        } else {
+          navEl.classList.remove('nav-scroll');
+          navEl.classList.remove('navshadow');
+        }
+      });
+    </script>
     <div class="hero">
 
       <div class = "text">
@@ -70,116 +79,87 @@
   
   
 
-    <article>
-      <div class = "articleContainer">
-        <h2 class = "title">Introduction</h2>
-      </div>
-      <div class = "artText">
-        <p>
-        The Darfur Crisis and the latest Sudanese conflict (2023) represent some of the most tragic and pro
-        longed episodes of violence in Sudan's modern history. These conflicts have been marked by ethnic tensions
-        , political instability, and humanitarian disasters. While the Darfur crisis began in the early 2000s, the
-         roots of Sudan's ongoing conflict can be traced back even earlier, 
-        to the country's history of ethnic and regional divisions, military rule, and marginalization.</p>
-      </div>
-    </article>
-    <article>
-      <div class = "articleContainer">
-        <h2 class = "title">The Last Sudanese Conflict (2023-present)</h2>
-      </div>
-      <div class = "artText">
+    
+
+
+
+  
+  <article>
+    <a href = "History.html">
+    <div class = "articleUnit">
+      <div class = "rightArticle">
+        <div class = "articleImage">
         
-
-
-
-
-
-
-            <h3>Background: Power Struggle and Political Transition</h3>
-        <p>
-          The Darfur crisis is just one chapter in Sudan's complex history of internal conflict. Sudan's long history 
-          of civil wars and military regimes culminated in the ousting of President Omar al-Bashir in April 2019 after 
-          months of protests against his rule. The Sudanese Revolution succeeded in removing Bashir, and a 
-          transitional government was established with civilian and military leadership. However, tensions 
-          between the military and civilian factions, along with economic struggles, continued to undermine 
-          the transitional government.
-
-          By 2021, General Abdel Fattah al-Burhan, head of the Sudanese military, and General Mohamed Hamdan Dagalo, 
-          head of the Rapid Support Forces (RSF), a powerful paramilitary group, staged a coup against the civilian-l
-          ed government. This sparked a political crisis and led to renewed instability.</p>        
-          <h3>Outbreak of Conflict (2023)</h3>
-          <p>In April 2023, tensions between al-Burhan's Sudanese Armed Forces (SAF) and Dagalo's RSF reached a 
-            boiling point. The dispute arose from disagreements over the integration of the RSF into the regular
-             army, as mandated by a peace agreement intended to establish a unified military structure.
-            The conflict quickly escalated into full-scale fighting between the two factions. Khartoum, the capi
-            tal of Sudan, became the battleground. There were reports of airstrikes, artillery bombardments, 
-            and intense street battles, causing widespread destruction. The fighting left hundreds dead and d
-            isplaced thousands of civilians. 
-            Hospitals and residential areas were caught in the crossfire, worsening the humanitarian crisis.</p>
-
-
-
-
-
-
-
-            <h3>Humanitarian Impact</h3>
-        <p>
-          TAs of mid-2023, Khartoum has been devastated by the violence, with many of the city's infra
-          structure, including schools and hospitals, destroyed. More than 1 million people have been 
-          isplaced, and tens of thousands have fled to neighboring countries such as Chad. The humanita
-          rian situation is d
-          ire, with food shortages, lack of medical care, and basic services.</p>     
-          
-          
-          
-        </div>
+          <img src = "images/spot.jpg"></div>
+          <div class = "articleText">
+            <h3>What is happening in Sudan?</h3>
+            <p>Unimaginable figures that make you want to cry.<br>
+              Millions without homes, thousands without lives.</p>
+          </div>
+        
       </div>
-    </article>
-    <article>
-      <div class = "articleContainer">
-        <h2 class = "title">International Reaction</h2>
+      <div class="clear"></div>
+    </div>
+  </a>
+
+  <a href = "History.html">
+    <div class = "articleUnit">
+      <div class = "leftArticle">
+        <div class = "articleImage">
+        
+          <img src = "images/spot.jpg"></div>
+          <div class = "articleText">
+            <h3>History of the conflict</h3>
+            <p>The Darfur Crisis and the latest Sudanese conflict (2023)represent some of the most
+               tragic and pro longed episodes of violence in Sudan's modern history</p>
+          </div>
+        
       </div>
-      <div class = "artText">
-        <p>
-          The international community, including the United Nations and African Union, ha
-          s called for a ceasefire and dialogue between the warring parties. However, the 
-          violence continues with no clear resolution in sight. Many countries have impose
-          d sanctions on Sudan's military leaders, but t
-          he conflict remains entrenched, and the path to peace appears uncertain.</p>
+      <div class="clear"></div>
+    </div>
+  </a>
+
+  <a href = "">
+    <div class = "articleUnit">
+      <div class = "rightArticle">
+        <div class = "articleImage">
+        
+          <img src = "images/spot.jpg"></div>
+          <div class = "articleText">
+            <h3>Want to become a Volunteer?</h3>
+            <p>Join our programm</p>
+          </div>
+        
       </div>
-    </article>
-    <article>
-      <div class = "articleContainer">
-        <h2 class = "title">Key Events in the Sudanese Conflicts</h2>
+      <div class="clear"></div>
+    </div>
+  </a>
+
+
+  <a href = "">
+    <div class = "articleUnit">
+      <div class = "leftArticle">
+        <div class = "articleImage">
+        
+          <img src = "images/spot.jpg"></div>
+          <div class = "articleText">
+            <h3>About Us</h3>
+            <p>About Us</p>
+          </div>
+        
       </div>
-      <div class = "artText">
-        <ul>
-          <li>2003 - Outbreak of the Darfur conflict as rebel groups begin fighting the Sudanese government.</li>
-          <li>2009 - ICC issues arrest warrant for President Bashir for war crimes in Darfur.</li>
-          <li>2011 - South Sudan gains independence, but tensions remain between North and South.</li>
-          <li>2019 - Omar al-Bashir ousted after months of pop
-            ular protests, marking the beginning of a transition to civilian rule.</li>
-          <li>2021 - Military coup led by General al-Burhan and General Dagalo.</li>
-          <li>2023 - Conflict erupts between the Sudanese Armed Forces (SAF) and Rapid Support Forces (RSF), 
-            leading to widespread violence and displacement.</li>
-        </ul>
-      </div>
+      <div class="clear"></div>
+    </div>
+  </a>
 
 
-
-
-
-    </article>
-
-    <article>
-      <div class = "articleContainer">
-        <h2 class = "title">Latest News</h2>
-      </div>
-    </article>
-
-
-    <div id = "news">
+  <article>
+    <div class = "articleContainer">
+      <h2 class = "title">Latest News</h2>
+    </div>
+  </article>
+  </article>
+  <div id = "news">
     <div class="gallery">
       <div class = "galleryUnit">
         <img src="images/spot.jpg" alt="Photo 1">
@@ -216,26 +196,43 @@
     </div>
   </div>
 
+</main>
 
-
-
-  </main>
-    <aside></aside>
-    <footer>
-      <div class = "footerMain">
-        <ul>
-          <li><a href = "">Search</a></li>
-          <li><a href = "">Donate</a></li>
-          <li><a href = "">Career</a></li>
-          <li><a href = "">For Journalists</a></li>
-        </ul>
-        <ul class = "contact">
-          <li><a href = "">Contact Us</a></li>
-          <li><a href = "">Subscribe</a></li>
-          
-        </ul>
-    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        
+        <div class="footer-section">
+          <h3><a href = "">DONATE</a></h3>
+        </div>
+        <div class="footer-section">
+          <h3><a href = "">CAREERS</a></h3>
+        </div>
+        <div class="footer-section">
+          <h3><a href = "">FOR JOURNALISTS</a></h3>
+        </div>
+        <div class="footer-section">
+          <h3><a href = "">SITEMAP</a></h3>
+        </div>
+      </div>
+      <div class = "buttons">
+        <a href = ""><div class = "footerButton">CONTACT US</div></a>
+        <a href = ""><div class = "footerButton">SUBSCRIBE</div></a>
+  
+      </div>
+  
+      <div class="social">
+        <h3>CONNECT WITH US</h3>
+        
+      </div>
+  
+     
+  
+      <div class="footer-bottom">
+        
+          © 2025 Compass Group | <a href="#" style="color: white;">Legal Notice</a>
+        
+        
+      </div>
     </footer>
-
   </body>
 </html>
