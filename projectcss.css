@@ -3,8 +3,9 @@ body, html {
         padding: 0;
         font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;;
         font-size: 100%;
-        background-color: #e1e4eb;
-
+        /* background-color: #e1e4eb; */
+        background-color: #f0f0f0;
+        
       }
       a {
         text-decoration: none;
@@ -13,27 +14,57 @@ body, html {
       .clear {
         clear: both;
       }
-      
+
+      .main {
+        padding-top: 7em;
+      }
+      .main p {
+        font-size: 1.4em;
+      }
+      .page {
+        color:#e4572e !important;
+      }
+      .logo img {
+        width: auto;
+        height: 5em;
+        border-radius: 50px;
+      }
+
+
+
       nav {
         width: 100%;
-        height: 6em;
+        height: 7em;
         border-color: transparent;
         float: left;
         z-index: 1000;
         position: fixed;
         top:0px;
-        background-color: #5b5c5f;
+        background-color: #e1e4eb;
         transition: all 0.3s;
-
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       
       .nav-scroll {
-        background-color: #5b5c5f;
-        box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
-        
+        background-color: #e1e4eb;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+
+      }
+      .nav-scroll a {
+        color: black;
       }
       
       
+      
+      nav a {
+        color: rgb(0, 0, 0);
+      }
+      nav ul li:last-child a {
+        color: #fff;
+      }
       nav ul{
         text-decoration: none;
         list-style: none;
@@ -42,7 +73,7 @@ body, html {
         display: flex;
         justify-content: space-around;
         font-size: 20px;
-        margin-left: auto;
+        color: black;
         
       }
       nav a:hover {
@@ -51,13 +82,13 @@ body, html {
       nav li {
         display: inline;
         background-color: transparent;
-        margin: 1.3em;
         padding-top: 5px;
       }
       nav ul li:last-child {
         background-color: #e4572e;
         border-radius: 25px;
-        padding: 5px 15px 5px 15px;
+        padding: 5px 15px;
+        
       }
       nav ul li:last-child:hover {
         background-color: #ea6036;
@@ -66,6 +97,46 @@ body, html {
         color: white;
       }
       
+      .hero {
+        position: relative;
+        background-image: url('images/spotNew.jpg'); 
+        background-size: cover;
+        color: white;
+        height: 45em;
+        padding: 4%;
+      }
+      .hero .text {
+        margin: 7% 15% 0;
+      }
+      .hero h1 {
+        font-size: 6em;
+        margin: 0;
+      }
+  
+      .hero p {
+        font-size: 2.5em;
+        max-width: 15em;
+        margin: 0;
+      }
+  
+      .hero .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 20em;
+      }
+  
+      .hero .buttons div {
+        background-color: #e4572e;
+        color: white;
+        border-radius: 3px;
+        padding: 10px 30px 10px 30px;
+        
+      }
+      .hero .buttons div:hover{
+      background-color: #ea6036;   
+      }
+
 
 /**main*/
     main {
@@ -75,48 +146,7 @@ body, html {
       padding: 0px 15px;
       padding-bottom: 15em;
     }
-      .hero {
-      position: relative;
-      background-image: url('images/spotNew.jpg'); 
-      background-size: cover;
-      color: white;
-      height: 45em;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center; */
-      padding: 4%;
-    }
-    .hero .text {
-      margin: 7% 15% 0;
-    }
-    .hero h1 {
-      font-size: 6em;
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 2.5em;
-      max-width: 15em;
-      margin: 0;
-    }
-
-    .hero .buttons {
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      width: 20em;
-    }
-
-    .hero .buttons div {
-      background-color: #e4572e;
-      color: white;
-      border-radius: 3px;
-      padding: 10px 30px 10px 30px;
       
-    }
-    .hero .buttons div:hover{
-    background-color: #ea6036;   
-    }
 
 
     .gallery {
@@ -142,6 +172,7 @@ body, html {
       width: 100%;
       height: auto;
       border-radius: 8px;
+      margin: 0;
     }
 
 
@@ -190,11 +221,46 @@ body, html {
       font-size: 1.3em;
     }
     
-      
+      /******* Main Articles*******//******* Main Articles*******//******* Main Articles*******/
 
-   
+    .articleUnit {
+      padding: 1em;
+      margin-top: 5em;
+    }
+    .rightArticle img {
+      object-fit: cover; /*https://www.w3schools.com/css/css3_object-fit.asp */
+      width: 100%;
+      border-radius: 20px;
+    }
+    img {
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+      margin: 0em 0.8em;
+    }
+    .rightArticle .articleImage {
+      width: 55%;
+      float: left;
 
-    
+    }
+    .leftArticle .articleImage {
+      width: 55%;
+      float: right;
+    }
+    .articleText {
+      padding-top: 2em;
+      text-align: center;
+      color: black;
+    }
+    .articleText h3 {
+      font-size: 1.9em;
+    }
+    .articleText p {
+      font-size: 1.3em;
+    }
+
+    /*****Main Articles End****//*****Main Articles End****//*****Main Articles End****/
 
 
 
@@ -233,7 +299,7 @@ body, html {
 
 
 
-
+/********FOOter******/
 
     footer {
       padding: 40px;
@@ -316,59 +382,20 @@ body, html {
       }
     }
 
+/*************Footer     end*******//*************Footer     end*******//*************Footer     end*******/
 
 
 
 
-
-    .clear {
-      clear: both;
-    }
-    .articleUnit {
-      padding: 1em;
-      margin-top: 5em;
-    }
-    .rightArticle img {
-      object-fit: cover; /*https://www.w3schools.com/css/css3_object-fit.asp */
-      width: 100%;
-      border-radius: 20px;
-    }
-    img {
-      object-fit: cover;
-      display: block;
-      width: 100%;
-      border-radius: 20px;
-      margin: 0em 0.8em;
-    }
-    .rightArticle .articleImage {
-      width: 55%;
-      float: left;
-
-    }
-    .leftArticle .articleImage {
-      width: 55%;
-      float: right;
-    }
-    .articleText {
-      padding-top: 2em;
-      text-align: center;
-      color: black;
-    }
-    .articleText h3 {
-      font-size: 1.9em;
-    }
-    .articleText p {
-      font-size: 1.3em;
-    }
+    
+    
 
 
 
 
     /************* History Tab Articles****************/
 
-    #historyMain {
-      padding-top: 7em;
-    }
+    
     
     article .articleContainer {
       padding: 10px 20px;
@@ -396,3 +423,84 @@ body, html {
      article ul li {
        margin: 0.5em;
      }
+
+     /*********Volunteer********/
+
+fieldset {
+  border: 0px;
+  line-height: 1.5;
+}
+form {
+  border-radius: 15px;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.formRow {
+  display: flex;
+  gap: 1em;  /*https://www.w3schools.com/cssref/css3_pr_gap.php*/
+  justify-content: space-between;
+}
+input, textarea, select {
+  padding: 0.75rem;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+.formUnit {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.button {
+  background-color: white;
+  margin-top: 1em;
+}
+.enroll {
+  background-color: #e4572e;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.enroll:hover {
+  background-color: #ea6036;
+}
+legend {
+  text-align: center;
+}
+
+     /*********About Us********/
+
+
+.header {
+  margin-top: 6em;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/headerOne.webp'), url('images/headerOne.jpg'); /*https://www.w3schools.com/cssref/pr_background-blend-mode.php*/
+  height: 15em;
+}
+#aboutUsMain img {
+  margin: 3em 4em;
+  height: 40em;
+  width: auto;
+
+}
+
+#aboutUsMain .aboutUsHistory {
+  display: flex;
+  gap: 1em;
+}
+
+#aboutUsMain .aboutUsHistory .aboutHistoryImage {
+}
+
+#aboutUsMain .aboutUsHistory .aboutHistoryText {
+  flex: 1;
+}
+#aboutUsMain h3 {
+  font-size: 3.5em;
+}

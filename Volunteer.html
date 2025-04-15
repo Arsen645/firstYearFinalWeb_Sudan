@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Volunteer</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="projectcss.css" type = "text/css">
+</head>
+
+<body>
+    <nav>
+      <div class = "logo">
+        <img src="images/Logo.jpg">
+      </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html" >About Us</a></li>
+          <li><a href="Volunteer.html" class = "page">Volunteer</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Donate</a></li>
+        </ul>
+      </nav>
+      <script> <!-- https://youtube/axQ7eN2oPu0 -->
+        const navEl = document.querySelector('nav');
+    
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            navEl.classList.add('nav-scroll');
+            navEl.classList.add('navshadow');
+          } else {
+            navEl.classList.remove('nav-scroll');
+            navEl.classList.remove('navshadow');
+          }
+        });
+      </script>
+      
+    <main id = "volunteerMain" class = "main">
+    <form method="post" action="" encrypte="text/plain">
+        <fieldset>
+            <legend><h2>Volunteer</h2></legend>
+            <div class="rows">
+                <div class="formRow">
+                    <div class="formUnit">
+                        <label class="cell" for="name">Name: </label>
+                         <input class="cell" type="text" id="name" name="name" maxlength="20" size="30" required>   <!--required:  https://www.w3schools.com/html/html_form_attributes.asp -->
+                    </div>
+                    <div class="formUnit">
+                        <label class="cell" for="Surname">Surname: </label>
+                        <input class="cell" type="text" id="Surname" name="Surname">
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formUnit">
+                        <label class="cell" for="Tel">Tel: </label>
+                        <input class="cell" type="text" id="Tel" name="Tel">
+                    </div>
+                    <div class="formUnit">
+                        <label class="cell" for="Email">Email: </label>
+                        <input class="cell" type="text" id="add3" name="Email" >
+                    </div>
+                </div>
+                <div class="formUnit ">
+                    <label for="info">Additional Information (Optional)</label>
+                    <textarea id="info" name="info" class="textarea"></textarea>
+                </div>
+
+                <div class="formRow">
+
+                    <div class="formUnit" >
+                        <label for="dob">Date of Birth</label> <!-- https://www.w3schools.com/html/html_forms_attributes.asp -->
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                
+                <div class = "formUnit">
+                <label for="married">Married </label>
+                <select id="married" name="married" required>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                    
+                  </select>
+            </div>
+        </div>
+            <div class = "formUnit" >
+                <input class="button enroll" name="submit" type="submit">
+            </div>
+            <div class = "formUnit formButtor" >
+
+                <input class="button for" value="Reset" type="reset">
+            </div>
+            </div>
+        </fieldset>
+    </form>
+</main>
+
+<footer class="footer">
+    <div class="footer-top">
+      
+      <div class="footer-section">
+        <h3><a href = "">DONATE</a></h3>
+      </div>
+      <div class="footer-section">
+        <h3><a href = "">CAREERS</a></h3>
+      </div>
+      <div class="footer-section">
+        <h3><a href = "">FOR JOURNALISTS</a></h3>
+      </div>
+      <div class="footer-section">
+        <h3><a href = "">SITEMAP</a></h3>
+      </div>
+    </div>
+    <div class = "buttons">
+      <a href = ""><div class = "footerButton">CONTACT US</div></a>
+      <a href = ""><div class = "footerButton">SUBSCRIBE</div></a>
+
+    </div>
+
+    <div class="social">
+      <h3>CONNECT WITH US</h3>
+      
+    </div>
+
+   
+
+    <div class="footer-bottom">
+      
+        © 2025 Compass Group | <a href="#" style="color: white;">Legal Notice</a>
+      
+      
+    </div>
+  </footer>
+</body>
+
+</html>
