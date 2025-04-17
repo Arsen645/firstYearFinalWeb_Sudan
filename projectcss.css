@@ -1,506 +1,622 @@
-body, html {
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;;
-        font-size: 100%;
-        /* background-color: #e1e4eb; */
-        background-color: #f0f0f0;
-        
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-      .clear {
-        clear: both;
-      }
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    ;
+    font-size: 100%;
+    /* background-color: #e1e4eb; */
+    background-color: #f0f0f0;
 
-      .main {
-        padding-top: 7em;
-      }
-      .main p {
-        font-size: 1.4em;
-      }
-      .page {
-        color:#e4572e !important;
-      }
-      .logo img {
-        width: auto;
-        height: 5em;
-        border-radius: 50px;
-      }
+  }
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
 
+  .clear {
+    clear: both;
+  }
 
-      nav {
-        width: 100%;
-        height: 7em;
-        border-color: transparent;
-        float: left;
-        z-index: 1000;
-        position: fixed;
-        top:0px;
-        background-color: #e1e4eb;
-        transition: all 0.3s;
-        color: black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      
-      .nav-scroll {
-        background-color: #e1e4eb;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+  .main {
+    padding-top: 7em;
+  }
 
-      }
-      .nav-scroll a {
-        color: black;
-      }
-      
-      
-      
-      nav a {
-        color: rgb(0, 0, 0);
-      }
-      nav ul li:last-child a {
-        color: #fff;
-      }
-      nav ul{
-        text-decoration: none;
-        list-style: none;
-        background-color: transparent;
-        width: 55%;
-        display: flex;
-        justify-content: space-around;
-        font-size: 20px;
-        color: black;
-        
-      }
-      nav a:hover {
-        color: #ea6036;
-      }
-      nav li {
-        display: inline;
-        background-color: transparent;
-        padding-top: 5px;
-      }
-      nav ul li:last-child {
-        background-color: #e4572e;
-        border-radius: 25px;
-        padding: 5px 15px;
-        
-      }
-      nav ul li:last-child:hover {
-        background-color: #ea6036;
-      }
-      nav ul li:last-child a:hover {
-        color: white;
-      }
-      
-      .hero {
-        position: relative;
-        background-image: url('images/spotNew.jpg'); 
-        background-size: cover;
-        color: white;
-        height: 45em;
-        padding: 4%;
-      }
-      .hero .text {
-        margin: 7% 15% 0;
-      }
-      .hero h1 {
-        font-size: 6em;
-        margin: 0;
-      }
-  
-      .hero p {
-        font-size: 2.5em;
-        max-width: 15em;
-        margin: 0;
-      }
-  
-      .hero .buttons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        width: 20em;
-      }
-  
-      .hero .buttons div {
-        background-color: #e4572e;
-        color: white;
-        border-radius: 3px;
-        padding: 10px 30px 10px 30px;
-        
-      }
-      .hero .buttons div:hover{
-      background-color: #ea6036;   
-      }
+  .main p {
+    font-size: 1.4em;
+  }
+
+  .page {
+    color: #e4572e !important;
+  }
+
+  .logo img {
+    width: auto;
+    height: 5em;
+    border-radius: 50px;
+  }
+  .orange {
+    color:#e4572e;
+  }
 
 
-/**main*/
-    main {
-      width: 80%;
-      margin: 0px auto;/* I did it myself. 0px - top margin, auto - left and right*/
-      background-color: #f0f0f0;
-      padding: 0px 15px;
-      padding-bottom: 15em;
-    }
-      
+
+  nav {
+    width: 100%;
+    height: 7em;
+    border-color: transparent;
+    float: left;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    background-color: #e1e4eb;
+    transition: all 0.3s;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-scroll {
+    background-color: #e1e4eb;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+
+  }
+
+  .nav-scroll a {
+    color: black;
+  }
 
 
+
+  nav a {
+    color: rgb(0, 0, 0);
+  }
+
+  nav ul li:last-child a {
+    color: #fff;
+  }
+
+  nav ul {
+    text-decoration: none;
+    list-style: none;
+    background-color: transparent;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: black;
+
+  }
+
+  nav a:hover {
+    color: #ea6036;
+  }
+
+  nav li {
+    display: inline;
+    background-color: transparent;
+    padding-top: 5px;
+  }
+
+  nav ul li:last-child {
+    background-color: #e4572e;
+    border-radius: 25px;
+    padding: 5px 15px;
+
+  }
+
+  nav ul li:last-child:hover {
+    background-color: #ea6036;
+  }
+
+  nav ul li:last-child a:hover {
+    color: white;
+  }
+
+  .hero {
+    position: relative;
+    background-image: url('images/spotNew.jpg');
+    background-size: cover;
+    color: white;
+    height: 45em;
+    padding: 4%;
+  }
+
+  .hero .text {
+    margin: 7% 15% 0;
+  }
+
+  .hero h1 {
+    font-size: 6em;
+    margin: 0;
+  }
+
+  .hero p {
+    font-size: 2.5em;
+    max-width: 15em;
+    margin: 0;
+  }
+
+  .hero .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 20em;
+  }
+
+  .hero .buttons div {
+    background-color: #e4572e;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px;
+
+  }
+
+  .hero .buttons div:hover {
+    background-color: #ea6036;
+  }
+
+
+  /**main*/
+  main {
+    width: 80%;
+    margin: 0px auto;
+    /* I did it myself. 0px - top margin, auto - left and right*/
+    background-color: #f0f0f0;
+    padding: 0px 15px;
+    padding-bottom: 15em;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+
+  }
+
+
+  .gallery .galleryUnit {
+    flex: 1;
+    max-width: 30%;
+    min-width: 30%;
+    margin-bottom: 1.5em;
+  }
+
+
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0;
+  }
+
+
+
+  .caption {
+    padding: 3px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+
+
+  .caption p {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 640px) {
     .gallery {
-      display: flex;
-      justify-content: space-around;
-      padding-top: 25px;
-      margin-top: 25px;
-      flex-wrap: wrap;
-
-    }
-    
-
-    .gallery .galleryUnit {
-      flex: 1; 
-      max-width: 30%;
-      min-width: 30%;
-      margin-bottom: 1.5em;
-    }
-
-    
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 0;
-    }
-
-
-
-    .caption {
-      padding: 3px;
-      background-color: white;
-      border-radius: 5px;
-      text-align: center;
-    }
-
-    
-
-    .caption p {
-      font-size: 14px;
-    }
-    
-      @media screen and (max-width: 640px){
-        .gallery {
       display: flex;
       flex-direction: column;
       margin-top: 50px;
     }
+
     .gallery .galleryUnit {
-          flex: 1; 
-          min-width: 99%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-          }
-    .caption {
-      padding: 10px;
-      background-color: white;
-      border-radius: 5px;
-      text-align: center;
-      height: 10em;
-    }
-
-    .caption h3 {
-      margin-top: 0.3em;
-      margin-bottom: 0.4em;
-      font-size: 1.8em;
-    }
-
-    .caption p {
-      font-size: 1.3em;
-    }
-    
-      /******* Main Articles*******//******* Main Articles*******//******* Main Articles*******/
-
-    .articleUnit {
-      padding: 1em;
-      margin-top: 5em;
-    }
-    .rightArticle img {
-      object-fit: cover; /*https://www.w3schools.com/css/css3_object-fit.asp */
-      width: 100%;
-      border-radius: 20px;
-    }
-    img {
-      object-fit: cover;
-      display: block;
-      width: 100%;
-      border-radius: 20px;
-      margin: 0em 0.8em;
-    }
-    .rightArticle .articleImage {
-      width: 55%;
-      float: left;
-
-    }
-    .leftArticle .articleImage {
-      width: 55%;
-      float: right;
-    }
-    .articleText {
-      padding-top: 2em;
-      text-align: center;
-      color: black;
-    }
-    .articleText h3 {
-      font-size: 1.9em;
-    }
-    .articleText p {
-      font-size: 1.3em;
-    }
-
-    /*****Main Articles End****//*****Main Articles End****//*****Main Articles End****/
-
-
-
-
-
-
-    #news .galleryUnit {
-      max-width: 21%;
-      min-width: 23%;
-
-    }
-    #news .galleryUnit img {
-      border-radius: 0;
-    }
-    #news .galleryUnit .caption {
-      background-color: #f0f0f0;
-    }
-    #news .galleryUnit .caption h3 {
-      padding: 0%;
-      margin: 0%;
-      text-align: left;
-      font-size: 1.1em;
-    }
-    #news .galleryUnit .caption p {
-      padding: 0%;
-      margin: 0%;
-      margin-top: 5px;
-      text-align: left;
-      font-size: 1em;
-    }
-
-    
-    
- 
-
-
-
-
-/********FOOter******/
-
-    footer {
-      padding: 40px;
-      border-top: 2px solid #e25e0e;
-      background-color: #0d0d0d;
-      color:#fff;
-    }
-
-    .footer-top {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 40px;
-    }
-
-    .footer-section {
-      margin: 10px 20px;
-      text-align: center;
-    }
-
-    .footer-section h3 {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .social {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .social h3 {
-      color: #f26522;
-      margin-bottom: 15px;
-    }
-
-    .footer-bottom {
-      font-size: 14px;
-      padding: 10px 20px;      
-      text-align: center;
-    }
-
-    .footer-top {
-      width: 80%;
+      flex: 1;
+      min-width: 99%;
       margin-left: auto;
       margin-right: auto;
     }
-    footer .footer-top a:hover {
-      color: #ea6036;
+  }
+
+  .caption {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    height: 10em;
+  }
+
+  .caption h3 {
+    margin-top: 0.3em;
+    margin-bottom: 0.4em;
+    font-size: 1.8em;
+  }
+
+  .caption p {
+    font-size: 1.3em;
+  }
+
+  /******* Main Articles*******/
+  /******* Main Articles*******/
+  /******* Main Articles*******/
+  .mainSections .articleUnit:hover {
+    background-color: #f8f8f8 !important;
+  }
+
+  .articleUnit {
+    padding: 1em;
+    margin-top: 5em;
+    border-radius: 20px;
+    padding-right: 2em;
+  }
+
+  .rightArticle img {
+    object-fit: cover;
+    /*https://www.w3schools.com/css/css3_object-fit.asp */
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0em 0.8em;
+  }
+
+  .rightArticle .articleImage {
+    width: 55%;
+    float: left;
+
+  }
+
+  .leftArticle .articleImage {
+    width: 55%;
+    float: right;
+  }
+
+  .articleText {
+    padding-top: 2em;
+    text-align: center;
+    color: black;
+  }
+
+  .articleText h3 {
+    font-size: 1.9em;
+  }
+
+  .articleText p {
+    font-size: 1.3em;
+  }
+
+  /*****Main Articles End****/
+  /*****Main Articles End****/
+  /*****Main Articles End****/
+
+
+
+
+
+
+  #news .galleryUnit {
+    max-width: 21%;
+    min-width: 23%;
+
+  }
+
+  #news .galleryUnit img {
+    border-radius: 0;
+  }
+
+  #news .galleryUnit .caption {
+    background-color: #f0f0f0;
+  }
+
+  #news .galleryUnit .caption h3 {
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+    font-size: 1.1em;
+  }
+
+  #news .galleryUnit .caption p {
+    padding: 0%;
+    margin: 0%;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 1em;
+  }
+
+
+
+
+
+
+
+
+  /********FOOter******/
+
+  footer {
+    padding: 40px;
+    border-top: 2px solid #e25e0e;
+    background-color: #0d0d0d;
+    color: #fff;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  .footer-section {
+    margin: 10px 20px;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer .social {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .social h3 {
+    color: #f26522;
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .footer-top {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer .footer-top a:hover {
+    color: #ea6036;
+  }
+
+  footer .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer .footerButton {
+    padding: 1em;
+    margin-top: 1em;
+    border: 1px solid #fff;
+    width: 15em;
+    text-align: center;
+  }
+
+  footer .footerButton:hover {
+    color: black;
+    background-color: white;
+  }
+
+  @media (max-width: 640px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
     }
 
-    footer .buttons {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 80%;
+    .footer .buttons {
+      flex-direction: column;
       margin-left: auto;
       margin-right: auto;
+      align-items: center;
+      /*https://blog.hubspot.com/website/center-div-css#:~:text=Set%20the%20display%20property%20to,the%20div)%20vertically%20and%20horizontally.*/
     }
-    
-    footer .footerButton {
-      padding: 1em;
-      margin-top: 1em;
-      border: 1px solid #fff;
-      width: 15em;
-      text-align: center;
-    }
-    footer .footerButton:hover {
-      color: black;
-      background-color: white;
-    }
-    @media (max-width: 640px) {
-      .footer-top {
-        flex-direction: column;
-        align-items: center;
-      }
-      .footer .buttons {
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;/*https://blog.hubspot.com/website/center-div-css#:~:text=Set%20the%20display%20property%20to,the%20div)%20vertically%20and%20horizontally.*/
-      }
-    }
+  }
 
-/*************Footer     end*******//*************Footer     end*******//*************Footer     end*******/
+  /*************Footer     end*******/
+  /*************Footer     end*******/
+  /*************Footer     end*******/
 
 
 
 
-    
-    
 
 
 
 
-    /************* History Tab Articles****************/
-
-    
-    
-    article .articleContainer {
-      padding: 10px 20px;
-      border-bottom: 2px solid #d3d3d3; 
-       padding-bottom: 3px; 
-     }
-     article .title {
-       color: #000000;
-       font-size: 1.5em; 
-       font-weight: bold;
-       margin-bottom: 5px;
-       
-     }
-     article .artText p {
-       font-size: 20px;
-     }
-     article .artText h3 {
-       font-size: 1.2em;
-      margin-bottom: 8px;
-     }
-     article ul {
-       list-style: none;
-       padding-left: 10px;
-     }
-     article ul li {
-       margin: 0.5em;
-     }
-
-     /*********Volunteer********/
-
-fieldset {
-  border: 0px;
-  line-height: 1.5;
-}
-form {
-  border-radius: 15px;
-  padding: 10px;
-  width: 80%;
-  margin: 0 auto;
-}
-.formRow {
-  display: flex;
-  gap: 1em;  /*https://www.w3schools.com/cssref/css3_pr_gap.php*/
-  justify-content: space-between;
-}
-input, textarea, select {
-  padding: 0.75rem;
-  border: 1px solid #000000;
-  border-radius: 12px;
-  font-size: 1rem;
-  resize: vertical;
-}
-
-.rows {
-  display: flex;
-  flex-direction: column;
-}
-.formUnit {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.button {
-  background-color: white;
-  margin-top: 1em;
-}
-.enroll {
-  background-color: #e4572e;
-  color: white;
-  font-weight: bold;
-  border: none;
-}
-.enroll:hover {
-  background-color: #ea6036;
-}
-legend {
-  text-align: center;
-}
-
-     /*********About Us********/
 
 
-.header {
-  margin-top: 6em;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/headerOne.webp'), url('images/headerOne.jpg'); /*https://www.w3schools.com/cssref/pr_background-blend-mode.php*/
-  height: 15em;
-}
-#aboutUsMain img {
-  margin: 3em 4em;
-  height: 40em;
-  width: auto;
+  /************* History Tab Articles****************/
 
-}
 
-#aboutUsMain .aboutUsHistory {
-  display: flex;
-  gap: 1em;
-}
 
-#aboutUsMain .aboutUsHistory .aboutHistoryImage {
-}
+  article .articleContainer {
+    padding: 10px 20px;
+    border-bottom: 2px solid #d3d3d3;
+    padding-bottom: 3px;
+  }
 
-#aboutUsMain .aboutUsHistory .aboutHistoryText {
-  flex: 1;
-}
-#aboutUsMain h3 {
-  font-size: 3.5em;
-}
+  article .title {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+  }
+
+  article .artText p {
+    font-size: 20px;
+  }
+
+  article .artText h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  article ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+
+  article ul li {
+    margin: 0.5em;
+  }
+
+  /*********Volunteer********/
+
+  #volunteerMain {
+    display: flex;
+    gap: 6em;
+    width: 60%;
+  }
+  .volunteerHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/headerTwo.jpg') !important; 
+        /*https://www.w3schools.com/cssref/pr_background-blend-mode.php*/
+
+  }
+  .formText {
+    order: -1;
+    flex:1;
+    margin-top: 3em;
+    font-size: 1.5em;
+    padding-left: 1em;
+    border-left: 3px solid #e4572e;
+    text-align: justify;
+  }
+  fieldset {
+    border: 0px;
+    line-height: 1.5;
+  }
+
+
+  .form {
+    padding: 10px;
+    order: 2;
+    flex: 1;
+  }
+
+  .formRow {
+    display: flex;
+    gap: 1em;
+    /*https://www.w3schools.com/cssref/css3_pr_gap.php*/
+    justify-content: space-between;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 0.75rem;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formUnit {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .button {
+    background-color: white;
+    margin-top: 1em;
+  }
+
+  .enroll {
+    background-color: #e4572e;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+
+  .enroll:hover {
+    background-color: #ea6036;
+  }
+
+  legend {
+    text-align: center;
+  }
+
+  /*********About Us********/
+
+
+  .header {
+    margin-top: 6em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url('images/headerOne.webp'), url('images/headerOne.jpg');
+    /*https://www.w3schools.com/cssref/pr_background-blend-mode.php*/
+    height: 15em;
+  }
+
+  #aboutUsMain img {
+    margin: 3em 4em;
+    height: 40em;
+    width: auto;
+
+  }
+
+  #aboutUsMain .aboutUsHistory {
+    display: flex;
+    gap: 1em;
+  }
+  #aboutUsMain .aboutUsHistory .aboutHistoryText {
+    flex: 1;
+  }
+
+  #aboutUsMain h3 {
+    font-size: 3.5em;
+  }
+
+
+
+  /******Contact Us********/  /******Contact Us********/  /******Contact Us********/
+
+  #contactUsMain {
+    display: flex;
+    gap: 5em;
+  }
+  #contactMessage {
+    flex: 2;
+    padding-right: 5em;
+  }
+  #contactInfo {
+    flex: 1;
+  }
+  #contactInfo p {
+    font-size: 1.2em;
+  }
+  
+  .accounts {
+    display: flex;
+    justify-content: center;
+  }
+  .emailUs p a {
+    color: #000;
+    text-decoration: underline;
+  }
