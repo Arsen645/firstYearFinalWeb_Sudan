@@ -176,7 +176,6 @@
     justify-content: space-around;
     padding-top: 25px;
     margin-top: 25px;
-    flex-wrap: wrap;
 
   }
 
@@ -202,7 +201,6 @@
   .caption {
     padding: 3px;
     background-color: white;
-    border-radius: 5px;
     text-align: center;
   }
 
@@ -230,7 +228,6 @@
   .caption {
     padding: 10px;
     background-color: white;
-    border-radius: 5px;
     text-align: center;
     height: 10em;
   }
@@ -257,17 +254,25 @@
     margin-top: 5em;
     border-radius: 20px;
     padding-right: 2em;
+    
+  }
+  .articleImage img {
+    height: 25em;
+
   }
 
   .rightArticle img {
-    object-fit: cover;
     /*https://www.w3schools.com/css/css3_object-fit.asp */
     width: 100%;
     border-radius: 20px;
   }
+  .info img {
+    height: 15em;
+    object-fit: cover;
+    border-radius: 0;
+  }
 
   img {
-    object-fit: cover;
     display: block;
     width: 100%;
     border-radius: 20px;
@@ -283,6 +288,7 @@
   .leftArticle .articleImage {
     width: 55%;
     float: right;
+    
   }
 
   .articleText {
@@ -316,6 +322,7 @@
 
   #news .galleryUnit img {
     border-radius: 0;
+    height: 10em;
   }
 
   #news .galleryUnit .caption {
@@ -336,6 +343,7 @@
     text-align: left;
     font-size: 1em;
   }
+ 
 
 
 
@@ -607,7 +615,7 @@
   }
   #contactInfo {
     flex: 1;
-    margin-top: 3em;
+    margin-top: 2em;
   }
   #contactInfo p {
     font-size: 1.2em;

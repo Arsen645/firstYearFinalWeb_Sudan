@@ -5,6 +5,28 @@
     <title>Contact Compass Group</title>
     <meta charset='utf-8'>
     <link rel="stylesheet" href="projectcss.css" type="text/css">
+    <script type="text/javascript">
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        else {
+            document.getElementById("demo").innerHIML = "Ceolocation is not supported by this browser.";
+        }
+        function showPosition(position) {
+
+            document.getElementById("demo").innerHTML = position.coords.latitude +
+                ", " + position.coords.longitude;
+            document.getElementById("demoH").innerHTML = "Your location is:"
+        }
+
+
+
+    </script>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 
 <body>
@@ -18,8 +40,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="AboutUs.html">About Us</a></li>
             <li><a href="Volunteer.html">Volunteer</a></li>
-            <li><a href="ContactUs.html" class="page">Contact Us</a></li>
-            <li><a href="">Donate</a></li>
+            <li><a href="" class="page">Contact Us</a></li>
+            <li><a href="Donate.html">Donate</a></li>
         </ul>
     </nav>
     <script> <!-- https://youtube/axQ7eN2oPu0 -->
@@ -89,7 +111,7 @@
             </div>
             <div class="socialPages">
                 <h3 class="orange">Socials</h3>
-                <div class="accounts" style = "justify-content: left;">
+                <div class="accounts" style="justify-content: left;">
                     <a data-testid="linkElement" href="https://www.facebook.com/profile.php?id=100085915072750"
                         target="_blank" rel="noreferrer noopener" class="oRtuWN" aria-label="Facebook"><wow-image
                             id="img_0_comp-lnu8s9j1" class="HlRz5e YaS0jR"
@@ -125,50 +147,52 @@
                 <p>For Information and General Inquiries:</p>
                 <p><a href="mailto: Arsen.ibrahimov@students.ittralee.ie">Arsen.ibrahimov@students.ittralee.ie</a></p>
             </div>
+            <h3 id="demoH" class="orange"></h3>
+            <p id="demo"></p>
         </div>
     </main>
 
     <footer class="footer">
         <div class="footer-top">
-    
-          <div class="footer-section">
-            <h3><a href="">DONATE</a></h3>
-          </div>
-          <div class="footer-section">
-            <h3><a href="">CAREERS</a></h3>
-          </div>
-          <div class="footer-section">
-            <h3><a href="">FOR JOURNALISTS</a></h3>
-          </div>
-          <div class="footer-section">
-            <h3><a href="sitemap.html">SITEMAP</a></h3>
-          </div>
+
+            <div class="footer-section">
+                <h3><a href="">DONATE</a></h3>
+            </div>
+            <div class="footer-section">
+                <h3><a href="">CAREERS</a></h3>
+            </div>
+            <div class="footer-section">
+                <h3><a href="">FOR JOURNALISTS</a></h3>
+            </div>
+            <div class="footer-section">
+                <h3><a href="sitemap.html">SITEMAP</a></h3>
+            </div>
         </div>
         <div class="buttons">
-          <a href="">
-            <div class="footerButton">CONTACT US</div>
-          </a>
-          <a href="">
-            <div class="footerButton">SUBSCRIBE</div>
-          </a>
-    
+            <a href="">
+                <div class="footerButton">CONTACT US</div>
+            </a>
+            <a href="">
+                <div class="footerButton">SUBSCRIBE</div>
+            </a>
+
         </div>
-    
+
         <div class="social">
-          <h3>CONNECT WITH US</h3>
+            <h3>CONNECT WITH US</h3>
             <div class="accounts">
-                <a data-testid="linkElement" href="https://www.facebook.com/profile.php?id=100085915072750" style = "background-color: #fff; border-radius: 110px;"
-                    target="_blank" rel="noreferrer noopener" class="oRtuWN" aria-label="Facebook"><wow-image1
-                        id="img_0_comp-lnu8s9j1" class="HlRz5e YaS0jR"
+                <a data-testid="linkElement" href="https://www.facebook.com/profile.php?id=100085915072750"
+                    style="background-color: #fff; border-radius: 110px;" target="_blank" rel="noreferrer noopener"
+                    class="oRtuWN" aria-label="Facebook"><wow-image1 id="img_0_comp-lnu8s9j1" class="HlRz5e YaS0jR"
                         data-image-info="{&quot;containerId&quot;:&quot;dataItem-lnu8s9kw1-comp-lnu8s9j1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:201,&quot;height&quot;:200,&quot;uri&quot;:&quot;11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                         data-motion-part="BG_IMG dataItem-lnu8s9kw1-comp-lnu8s9j1" data-bg-effect-name=""
                         data-has-ssr-src="" style="--wix-img-max-width:max(201px, 100%)"><img alt="Facebook"
-                            data-ssr-src-done="true" fetchpriority="high" style = "margin: 0; width: 39px; height: auto;"
+                            data-ssr-src-done="true" fetchpriority="high" style="margin: 0; width: 39px; height: auto;"
                             src="https://static.wixstatic.com/media/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png"
                             style="width: 39px; height: 39px; object-fit: cover;"></wow-image></a>
                 <a data-testid="linkElement" href="https://www.instagram.com/ibragimov144/" target="_blank"
-                    rel="noreferrer noopener" class="oRtuWN" aria-label="Instagram"><wow-image
-                        id="img_1_comp-lnu8s9j1" class="HlRz5e YaS0jR"
+                    rel="noreferrer noopener" class="oRtuWN" aria-label="Instagram"><wow-image id="img_1_comp-lnu8s9j1"
+                        class="HlRz5e YaS0jR"
                         data-image-info="{&quot;containerId&quot;:&quot;dataItem-lnu8s9kx-comp-lnu8s9j1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:200,&quot;height&quot;:200,&quot;uri&quot;:&quot;11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                         data-motion-part="BG_IMG dataItem-lnu8s9kx-comp-lnu8s9j1" data-bg-effect-name=""
                         data-has-ssr-src="" style="--wix-img-max-width:max(200px, 100%)"><img alt="Instagram"
@@ -188,16 +212,16 @@
             </div>
         </div>
         </div>
-    
-    
-    
+
+
+
         <div class="footer-bottom">
-    
-          © 2025 Compass Group | <a href="#" style="color: white;">Legal Notice</a>
-    
-    
+
+            © 2025 Compass Group | <a href="#" style="color: white;">Legal Notice</a>
+
+
         </div>
-      </footer>
+    </footer>
 
 </body>
 
