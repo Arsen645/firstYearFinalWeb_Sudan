@@ -9,6 +9,9 @@
     background-color: #f0f0f0;
 
   }
+  img, object {
+    max-width: 100%;
+  }
 
   a {
     text-decoration: none;
@@ -157,6 +160,10 @@
   .hero .buttons div:hover {
     background-color: #ea6036;
   }
+  #mobileSpot {
+    display: none;
+  }
+  
 
 
   /**main*/
@@ -210,20 +217,7 @@
     font-size: 14px;
   }
 
-  @media screen and (max-width: 640px) {
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      margin-top: 50px;
-    }
-
-    .gallery .galleryUnit {
-      flex: 1;
-      min-width: 99%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+  
 
   .caption {
     padding: 10px;
@@ -669,4 +663,123 @@
   #setemapMain div p {
     color:#000;
     font-size: 1.5em;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      
+    }
+    div.logo {
+      display: none;
+    }
+    nav ul {
+      width: 100%;
+      justify-content: space-between;
+      font-size: 1em;
+      padding: 5px;
+  
+    }
+    .hero {
+      height: 10em;
+    }
+    .mainHero {
+      background-image: none;
+      height: auto;
+      color: white;
+      width: 100%;
+      padding: 0%;
+      
+    }
+
+    .hero .text {
+      position: absolute;
+      top: 4em;
+      left: -1em;
+    }
+    .hero h1 {
+      font-size: 1.3em;
+      margin: 0;
+    }
+  
+    .hero p {
+      font-size: 1em;
+      max-width: 15em;
+      margin: 0;
+    }
+    
+  
+    .hero .buttons div {
+      
+      display: none;
+  
+    }
+    #mobileSpot {
+      margin:0;
+      padding: 0;
+      display: block;
+      border-radius: 0%;
+      position: relative;
+    }
+
+    .gallery .galleryUnit {
+      flex: 1;
+      min-width: 99%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .articleUnit .rightArticle {
+      display: flex;
+      flex-direction: column;
+    }
+    .rightArticle .articleImage {
+      width: 100%;
+      float:none;
+  
+    }
+    .articleUnit .leftArticle {
+      display: flex;
+      flex-direction: column;
+    }
+    .leftArticle .articleImage {
+      width: 100%;
+      height: auto;
+      float:none;
+    }
+    .leftArticle .articleImage img {
+      width: 100%;
+      height: auto;
+    }
+    .rightArticle .articleImage img {
+      width: 100%;
+      height: auto;
+    }
+    #news .galleryUnit {
+      min-width: 98%;
+  
+    }
+    #news .galleryUnit img {
+      border-radius: 0;
+      height: auto;
+      width: 100%;
+    }
+
+    /*********About Us********/
+
+    
+    .aboutUsHistory {
+      float: none;
+      flex-direction: column;
+    }
+    #aboutUsMain img.aboutHistoryImage  {
+      margin: 0 auto;
+      width: 90%;
+      height: auto;
+    }
+    #aboutUsMain h3 {
+      font-size: 1.8em;
+    }
   }
