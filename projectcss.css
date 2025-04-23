@@ -12,6 +12,9 @@
   img, object {
     max-width: 100%;
   }
+  .phoneMenu {
+    display: none;
+  }
 
   a {
     text-decoration: none;
@@ -33,6 +36,7 @@
   .page {
     color: #e4572e !important;
   }
+  
 
   .logo img {
     width: auto;
@@ -128,7 +132,9 @@
   }
 
   .hero .text {
-    margin: 7% 15% 0;
+    position: absolute;
+    top:25%;
+    left: 10%;
   }
 
   .hero h1 {
@@ -276,7 +282,7 @@
   .rightArticle .articleImage {
     width: 55%;
     float: left;
-
+    margin-right: 2em;
   }
 
   .leftArticle .articleImage {
@@ -667,21 +673,45 @@
 
 
   @media screen and (max-width: 768px) {
+    
     .gallery {
       display: flex;
       flex-direction: column;
       margin-top: 50px;
       
     }
-    div.logo {
-      display: none;
+    .header {
+      margin-top: 0;
     }
-    nav ul {
-      width: 100%;
+    .phoneMenu {
+      display: inline;
+    }
+    .phoneMenu img {
+      height: 2.5em;
+      width: auto;
+    }
+    .phoneMenuPage {
+      width: 100vw;
+      height: 90vh;
+      background-color: #d3d3d3;
+    }
+    .menuItem {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 3em;
       justify-content: space-between;
-      font-size: 1em;
-      padding: 5px;
-  
+      height: 3em;
+      color:#000;
+    }
+    .menuItem a {
+      color:#000;
+
+    }
+    
+    nav {
+      display: none;
+
     }
     .hero {
       height: 10em;
@@ -694,11 +724,16 @@
       padding: 0%;
       
     }
+    .indexMenu {
+      position: absolute;
+      top: 5%;
+      left: -5%;
+    }
 
     .hero .text {
       position: absolute;
-      top: 4em;
-      left: -1em;
+      top: 50%;
+      left: 10%;
     }
     .hero h1 {
       font-size: 1.3em;
@@ -769,7 +804,7 @@
 
     /*********About Us********/
 
-    
+
     .aboutUsHistory {
       float: none;
       flex-direction: column;
@@ -781,5 +816,33 @@
     }
     #aboutUsMain h3 {
       font-size: 1.8em;
+    }
+    
+    #volunteerMain {
+      flex-direction: column;
+      margin: 0em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    #voluneteerMain .form {
+
+    }
+    #contactUsMain {
+      flex-direction: column;
+    }
+    #contactUsMain #contactMessage {
+      padding: 0;
+    }
+    #donateHero {
+      flex-direction: column;
+      height: 150vh;
+    }
+    .formText h2 {
+      margin: 0 auto;
+      width: 90%;
+    }
+    .formText {
+      
     }
   }
