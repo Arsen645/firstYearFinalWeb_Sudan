@@ -27,94 +27,96 @@
 
 
 <body>
-        
+
     <nav class="nav">
         <div class="logo">
             <a href="index.html">
                 <a href="index.html">
                     <img src="images/Logo.jpg"></a>
         </div>
-        
+
         <ul>
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="AboutUs.html">About Us</a></li>
             <li><a href="Volunteer.html">Volunteer</a></li>
             <li><a href="ContactUs.html">Contact Us</a></li>
             <li><a href="Donate.html">Donate</a></li>
         </ul>
-        
+
     </nav>
-    
+
     <div id="donateHero" class="hero">
-        <menu class = "phoneMenu indexMenu">
-            <a href = "PhoneMenu.html"> 
-            <img src="images/Logo.jpg">
-          </a>
+        <menu class="phoneMenu indexMenu">
+            <a href="PhoneMenu.html">
+                <img src="images/Logo.jpg">
+            </a>
         </menu>
-        <main class = "donateMain main">
-        <div class="formText text">
-            <h2>Thank You for your donation</h2>
-          </div>
-        <div id="donateForm">
-            <form method="post" action="" encrypte="text/plain">
-                <fieldset>
-                    <legend>
-                        <h2>Donate</h2>
-                    </legend>
-                    <div class="rows">
-                        <div class="formRow">
-                            <div class="formUnit">
-                                <label class="cell" for="name">Name: </label>
-                                <input class="cell" type="text" id="name" name="name" maxlength="20" size="30" required>
-                                <!--required:  https://www.w3schools.com/html/html_form_attributes.asp -->
+        <main id = "donateMain" class="donateMain main">
+            <div class="formText text">
+                <h2>Thank You for your donation</h2>
+            </div>
+            <div id="donateForm">
+                <form method="post" action="" encrypte="text/plain">
+                    <fieldset>
+                        <legend>
+                            <h2>Donate</h2>
+                        </legend>
+                        <div class="rows">
+                            <div class="formRow">
+                                <div class="formUnit">
+                                    <label class="cell" for="name">Name: </label>
+                                    <input class="cell" type="text" id="name" name="name" maxlength="20" size="30"
+                                        required>
+                                    <!--required:  https://www.w3schools.com/html/html_form_attributes.asp -->
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="formRow">
-                            <div class="formUnit">
-                                <label class="i" for="Email">Email: </label>
-                                <input class="" type="text" id="add3" name="Email">
+                            <div class="formRow">
+                                <div class="formUnit">
+                                    <label class="i" for="Email">Email: </label>
+                                    <input class="" type="text" id="add3" name="Email">
+                                </div>
                             </div>
+                            <label for="amt">Repeat: </label>
+                            <select id="amt" name="amt" required>
+                                <option value="once">Once</option>
+                                <option value="week">Weakly</option>
+                                <option value="month">Monthly</option>
+
+
+
+                            </select>
+                            <label for="amount">Amount: </label>
+
+                            <div class="donateFormRow">
+                                <input name="amount" id="25" value="25" type="radio">
+                                <label for="25">25€ </label>
+
+                                <input name="amount" id="50" value="50" type="radio">
+                                <label for="50">50€ </label>
+
+                                <input name="amount" id="100" value="100" type="radio">
+                                <label for="100">100€ </label>
+
+                                <input name="amount" id="200" value="200" type="radio">
+                                <label for="200">200€ </label>
+                                <input name="amount" id="other" value="other" type="radio">
+                                <label for="other">other </label>
+                            </div>
+
+
+                            <div class="donateButtons">
+                                <input class="button enroll" value="PayPall" name="submit" type="submit">
+                                <input class="button enroll" value="Google Pay" name="submit" type="submit">
+                                <input class="button enroll" value="Apple Pay" name="submit" type="submit">
+                            </div>
+
                         </div>
-                        <label for="amt">Repeat: </label>
-                        <select id="amt" name="amt" required>
-                            <option value="once">Once</option>
-                            <option value="week">Weakly</option>
-                            <option value="month">Monthly</option>
-                            
+                    </fieldset>
+                </form>
+            </div>
 
+        </main>
+        <div class="clear"></div>
 
-                        </select>
-                        <label for="amount">Amount: </label>
-
-                        <div class = "donateFormRow">
-                        <input name="amount" id="25" value="25" type="radio">
-                        <label for="25">25€ </label>
-                    
-                        <input name="amount" id="50" value="50" type="radio">
-                        <label for="50">50€ </label>
-                    
-                        <input name="amount" id="100" value="100" type="radio">
-                        <label for="100">100€ </label>
-
-                        <input name="amount" id="200" value="200" type="radio">
-                        <label for="200">200€ </label>
-                        <input name="amount" id="other" value="other" type="radio">
-                        <label for="other">other </label>
-                        </div>
-
-
-                        <div class="donateButtons">
-                            <input class="button enroll" value = "PayPall" name="submit" type="submit">
-                            <input class="button enroll" value = "Google Pay" name="submit" type="submit">
-                            <input class="button enroll" value = "Apple Pay" name="submit" type="submit">
-                        </div>
-                        
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-        
-    </main><div class = "clear"></div>
-    
     </div>
