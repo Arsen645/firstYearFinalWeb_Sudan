@@ -847,10 +847,37 @@
   }
 
 
-  /***x-large devices***/
+  /***xx-large devices***/
   @media screen and (min-width: 1400px) {
     body, nav ul{
       font-size: 130%;
+    }
+    
+    .leftArticle .articleImage img {
+      width: 100%;
+      height: 100%;
+    }
+    .rightArticle .articleImage img {
+      width: 100%;
+      height: 100%;
+    }
+    #news .galleryUnit img {
+      border-radius: 0;
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+    #news .galleryUnit .newsImage {
+      height: 10em;
+      overflow: hidden;
+    }
+   
+    
+  }
+  /***x-large devices***/
+  @media screen and (min-width: 1200px) {
+    body, nav ul{
+      font-size: 120%;
     }
     
     .leftArticle .articleImage img {
