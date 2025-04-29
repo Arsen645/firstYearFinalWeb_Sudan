@@ -57,7 +57,11 @@
 
         <div class="aboutUsHistory">
             <div>
-                <img src="images/volunteer.jpg" class="aboutHistoryImage">
+                <!-- <img src="images/volunteer.jpg" class="aboutHistoryImage" > -->
+                <picture  class="aboutHistoryImage">
+                    <source media="(max-width: 768px)" srcset="images/volunteerResponsive.jpg">
+                    <img src="images/volunteer.jpg" alt="volunteer" class="aboutHistoryImage">
+                  </picture>
             </div>
             <div class="aboutHistoryText">
                 <h3>Who we are</h3>

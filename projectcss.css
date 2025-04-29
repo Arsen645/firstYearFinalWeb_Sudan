@@ -638,7 +638,7 @@
   
   }
   
-  .donateMain {
+  #donateMain {
     display: flex;
     justify-content: space-around;
     background-color: transparent;
@@ -651,7 +651,7 @@
     border-radius: 20px;
     padding-bottom: 2em;
   }
-  .donateMain .formText {
+  #donateMain .formText {
     margin-top: 0;
     position: relative;
   }
@@ -689,24 +689,7 @@
       height: 2.5em;
       width: auto;
     }
-    .phoneMenuPage {
-      width: 100vw;
-      height: 90vh;
-      background-color: #d3d3d3;
-    }
-    .menuItem {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      font-size: 3em;
-      justify-content: space-between;
-      height: 3em;
-      color:#000;
-    }
-    .menuItem a {
-      color:#000;
-
-    }
+    
     
     nav {
       display: none;
@@ -808,7 +791,7 @@
       float: none;
       flex-direction: column;
     }
-    #aboutUsMain img.aboutHistoryImage  {
+    #aboutUsMain .aboutHistoryImage  {
       margin: 0 auto;
       width: 90%;
       height: auto;
@@ -831,13 +814,19 @@
     #contactUsMain #contactMessage {
       padding: 0;
     }
-    #donateHero {
+    #donateMain {
       flex-direction: column;
-      height: 150vh;
     }
     .formText h2 {
       margin: 0 auto;
       width: 90%;
+    }
+    #donateMain .formText {
+      order: -10;
+    }
+    #donateMain #donateForm {
+      order: 10;
+      width: 80%;
     }
     
   }
@@ -864,7 +853,9 @@
       object-fit: cover;
     }
     #news .galleryUnit .newsImage {
-      height: 15em;
+      max-height: 15em;
+      min-height: 4em;
+      height: auto;
       overflow: hidden;
     }
    
@@ -891,9 +882,28 @@
       object-fit: cover;
     }
     #news .galleryUnit .newsImage {
-      height: 15em;
+      max-height: 15em;
+      min-height: 9em;
       overflow: hidden;
     }
    
     
+  }
+  .phoneMenuPage {
+    width: 100vw;
+    height: 90vh;
+    background-color: #d3d3d3;
+  }
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3em;
+    justify-content: space-between;
+    height: 3em;
+    color:#000;
+  }
+  .menuItem a {
+    color:#000;
+
   }
